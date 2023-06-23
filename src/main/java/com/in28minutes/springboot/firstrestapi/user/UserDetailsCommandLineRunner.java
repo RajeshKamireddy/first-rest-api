@@ -22,7 +22,7 @@ public class UserDetailsCommandLineRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		repository.save(new UserDetails("Ranga", "Admin"));
 		repository.save(new UserDetails("Ravi", "Admin"));
-		repository.save(new UserDetails("John", ""));
+		repository.save(new UserDetails("John", "User"));
 		
 //		List<UserDetails> users = repository.findAll();
 		List<UserDetails> users = repository.findByRole("Admin");
