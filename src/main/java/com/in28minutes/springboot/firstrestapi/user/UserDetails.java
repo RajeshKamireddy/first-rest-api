@@ -36,7 +36,6 @@ public class UserDetails {
 		return role;
 	}
 
-	@Override
 	public String toString() {
 		return "UserDetails [id=" + id + ", name=" + name + ", role=" + role + "]";
 	}
